@@ -1,38 +1,34 @@
-team1 = 120
-team2 = 95
-team3 = 140
-team4 = 110
-team5 = 85
+name =input("What is your name? ")
+place =input("Give me a place. ")
+animal =input("Give me an animal. ")
+fruit =input("Give me an a fruit. ")
+verb =input("Give me a verb. ")
+number = int(input("Give me a number. "))
+total_fruit = number * 2
 
-total = team1 + team2 + team3 + team4 + team5
-average = total / 5
- 
-print("Total points       :", total)
-print("Average per team   :", average)
- 
-stars_per_point = 2
-reward_stars = total * stars_per_point
-print("Total reward stars :", reward_stars)
+print(f""" One day, a boy named {name} went to the {place} and saw a {animal}. He was holding a {fruit}. The {animal} snatched the {fruit} and started {verb}. """)
 
-boxes = reward_stars // 25
-leftover = reward_stars % 25
- 
-print("Full boxes packed  :", boxes)
-print("Leftover stars     :", leftover)
+again =input("Do you want to play again? (yes or no)").lower().strip()
+while again == "yes":
+    name =input("What is your name? ")
+    place =input("Give me a place. ")
+    animal =input("Give me an animal. ")
+    fruit =input("Give me an a fruit. ")
+    verb =input("Give me a verb. ")
+    number = int(input("Give me a number. "))
+    total_fruit = number * 2
+    
+    print(f""" In August holiday, {name} went  to {place} by a {animal}. In the middle of the way, the {animal} started to get tired. As soon they were of the road, the {animal} started {verb}. """)
 
-last_week = 500
- 
-print("Better than last week? :", total > last_week)
-print("Same as last week?     :", total == last_week)
-print("At least as good?      :", total >= last_week)
+while again == "yes":
+    name =input("What is your name? ")
+    place =input("Give me a place. ")
+    animal =input("Give me an animal. ")
+    fruit =input("Give me an a fruit. ")
+    verb =input("Give me a verb. ")
+    number = int(input("Give me a number. "))
+    total_fruit = number * 2
 
-total += 30
-print("After bonus points :", total)
+    print(f""" One day, {name} went to the market to buy {number} {fruit}. On the way he kicked a {animal}. The {animal} chased him until he was tired. The {animal} bit his leg hard it left while its mouth was bloody. """)
 
-total -= 15
-print("After missed tasks :", total)
- 
-reward_stars = total * stars_per_point
-boxes = reward_stars // 25
- 
-print("Final boxes packed :", boxes)
+    print("Thank you for playing. ")
